@@ -21,5 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/menu_nave_bar"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

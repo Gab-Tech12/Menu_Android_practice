@@ -23,7 +23,7 @@
             android:title="save"
             app:showAsAction="ifRoom" />
 
-        <item android:title="" />
+
     </group>
 
 </menu>
