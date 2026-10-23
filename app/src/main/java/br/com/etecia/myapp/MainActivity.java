@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,10 +25,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btnSend = findViewById(R.id.btnSend);
+
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(MainActivity.this, "YOU CLICKED", Toast.LENGTH_SHORT).show();
             }
         });
     }
