@@ -8,19 +8,27 @@
     tools:context=".MainActivity">
 
 
-
     <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/main_menu"
-        app:title="GymPass"
         app:navigationIcon="@drawable/baseline_arrow_back"
-        />
+        app:title="GymPass" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNaviView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/menu_nave_bar"
         android:layout_gravity="bottom"
-        app:labelVisibilityMode="labeled"/>
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_nave_bar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
